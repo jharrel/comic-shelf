@@ -19,4 +19,9 @@ class ComicsController < ApplicationController
     redirect '/comics'
   end
 
+  post '/comics' do
+    comic = Comic.create(params[:id])
+    redirect '/comics'
+  end
+
 end
