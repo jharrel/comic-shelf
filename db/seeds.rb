@@ -1,0 +1,6 @@
+Comic.create(title: "Spiderman", issue: 54, alternate: [true, false].sample)
+Comic.create(title: "Spidergsdman", issue: 54, alternate: [true, false].sample)
+Comic.create(title: "Spidermsdan", issue: 54, alternate: [true, false].sample)
+Comic.create(title: "Spidasdferman", issue: 54, alternate: [true, false].sample)
+Comic.create(title: "Spiderman", issue: 54, alternate: [true, false].sample)
+Comic.create(title: "Spideasdfrman", issue: 54, alternate: [true, false].sample)

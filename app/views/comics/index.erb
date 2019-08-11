@@ -1,0 +1,27 @@
+<h1>Comics</h1>
+
+<table class="highlight">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Issue Number</th>
+      <th>Alternate Cover</th>
+      <th>View</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+
+        <tbody>
+          <% @comics.each do |comic| %>
+          <tr>
+            <td><%= comic.title %></td>
+            <td><%= comic.issue %></td>
+            <td><%= comic.alternate ? 'Alternate Cover' : 'Not An Alternate Cover' %></td>
+            <td><a href="/comics/<%= comic.id %>">View</a></td>
+            <td><a href="#">Edit</a> </td>
+            <td><a href="#">Delete</a> </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
